@@ -64,9 +64,9 @@ def snmpComntCheck(validIPs, username, netDevice):
             with open(f"failedDevices.txt","a") as failedDevices:
                 failedDevices.write(f"User {username} connected to {validDeviceIP} got an error.\n")
         
-        finally:
-            print(f"Outputs and files successfully created for device {validDeviceIP}")
-            print("For any erros or logs please check Logs -> authLog.txt\n")
+        
+    print(f"Outputs and files successfully created for device {validDeviceIP}")
+    print("For any erros or logs please check Logs -> authLog.txt\n")
 
     with open('Outputs/Devices with community abc.csv', mode='a', newline='') as file:
         authLog.info(f"File Devices with community abc.csv was created successfully")
