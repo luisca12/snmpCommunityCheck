@@ -1,6 +1,4 @@
 import logging
-
-import logging
 import logging.config
 
 logConfiguration = {
