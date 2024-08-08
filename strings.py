@@ -2,9 +2,9 @@ import os
 
 def greetingString():
         os.system("CLS")
-        print('  ----------------------------------------------- ')
-        print(f"  Welcome to the automated INET Network Testing ")
-        print('  -----------------------------------------------')
+        print('  ------------------------------------------------------- ')
+        print(f"  Welcome to the automated SNMP Community Check Program ")
+        print('  ------------------------------------------------------- ')
 
 def menuString(deviceIP, username):
         os.system("CLS")
@@ -13,7 +13,8 @@ def menuString(deviceIP, username):
         print('\t\t    Menu - Please choose an option')
         print('\t\t     Only numbers are accepted')
         print('  -------------------------------------------------------------- ')
-        print('  >\t         1. To test the INET network:\t\t       <\n')   
+        print('  >\t         1. To check for the below SNMP Community:     <')   
+        print('  >\t         snmp-server community aicinfo RO 99\t       <\n')
         print('  >\t\t      2. Exit the program\t\t       <')
         print('  -------------------------------------------------------------- \n')
 
@@ -28,3 +29,5 @@ def shRunString(validIPs):
         print(f'> Taking a show run of the device {validIPs} <')
         print('>\t   Please wait until it finishes\t  <')
         print('  ------------------------------------------------- ')
+
+menuString("TEST", "TEST")
